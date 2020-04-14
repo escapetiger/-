@@ -28,28 +28,28 @@ def set_layout():
                     id='Money_per_week',
                     children=[
                         html.Label('每周存入的金额:'),
-                        dcc.Input(id='money_per_week', type='text', placeholder='10', value=10),
+                        dcc.Input(id='money_per_week', type='text', placeholder='例: 10', value=10),
                     ]
                 ),
                 html.Div(
                     id='Increment_money',
                     children=[
                         html.Label('每周递增金额:'),
-                        dcc.Input(id='increment_money', type='text', placeholder='10', value=10),
+                        dcc.Input(id='increment_money', type='text', placeholder='例: 10', value=10),
                     ]
                 ),
                 html.Div(
                     id='Begin_date',
                     children=[
                         html.Label('开始日期(yyyy/mm/dd):'),
-                        dcc.Input(id='begin_date', type='text', placeholder='2020/1/1', value='2020/1/1'),
+                        dcc.Input(id='begin_date', type='text', placeholder='例: 2020/1/1', value='2020/1/1'),
                     ]
                 ),
                 html.Div(
                     id='Total_week',
                     children=[
                         html.Label('总共的周数:'),
-                        dcc.Input(id='total_week', type='text', placeholder='10', value=10),
+                        dcc.Input(id='total_week', type='text', placeholder='例: 10', value=10),
                     ]
                 )],
             style={'backgroundColor': '#E5EBF7'}
@@ -74,7 +74,7 @@ def set_layout():
                     id='Query_date',
                     children=[
                         html.Label('查询的日期:'),
-                        dcc.Input(id='query_date', type='text', placeholder='2020/2/1', value='2020/2/1'),
+                        dcc.Input(id='query_date', type='text', placeholder='例: 2020/2/1', value='2020/2/1'),
                     ]
                 ),
                 html.Div(
@@ -104,19 +104,19 @@ def set_layout():
                     id='Amount',
                     children=[
                         html.Label('金额：'),
-                        dcc.Input(id='amount', type='text', placeholder='100', value=100)]
+                        dcc.Input(id='amount', type='text', placeholder='例: 100', value=100)]
                 ),
                 html.Div(
                     id='Base_currency',
                     children=[
                         html.Label('待兑换币种：'),
-                        dcc.Input(id='base_currency', type='text', placeholder='CNY', value='CNY')]
+                        dcc.Input(id='base_currency', type='text', placeholder='例: CNY', value='CNY')]
                 ),
                 html.Div(
                     id='Target_currency',
                     children=[
                         html.Label('目标币种：'),
-                        dcc.Input(id='target_currency', type='text', placeholder='USD', value='USD')]
+                        dcc.Input(id='target_currency', type='text', placeholder='例: USD', value='USD')]
                 ),
                 html.Div(
                     id='Convert_result',
